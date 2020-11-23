@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t kammex/docker-react -f Dockerfile.dev .
+  - docker build -t olehantykuz/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true kammex/docker-react npm run test -- --coverage
+  - docker run -e CI=true olehantykuz/docker-react npm run test -- --coverage
